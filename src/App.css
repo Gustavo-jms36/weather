@@ -1,0 +1,208 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  font-size: 14px;
+	line-height: 1;
+  background-image: url('https://images.pexels.com/photos/69927/rain-floor-water-wet-69927.jpeg?auto=compress&cs=tinysrgb&w=600');
+  background-size: 100vw 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+	box-sizing: border-box;
+  color: #213547;
+}
+
+
+
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: auto;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 7px;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.location {
+  font-size: 20px;
+  text-align: center;
+}
+
+.side-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+.weather-temp {
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.temp-info i {
+  font-size: 20px;
+  color: rgb(0, 69, 126);
+}
+
+.temp-info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.weather-description {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.pronostic {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 7px;
+}
+
+.pronostic i {
+  font-size: 20px;
+  color: rgb(0, 69, 126);
+}
+
+.pronostic span {
+  font-weight: 700;
+}
+
+.aditionals {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+  gap: 10px;
+  padding: 10px;
+}
+
+.container-info-weather {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 150px;
+  padding: 10px;
+  box-shadow: 0 0  10px rgba(0, 69, 126, 0.5);
+  border-radius: 7px;
+}
+
+.container-info-weather h2 {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.container-info-weather i {
+  font-size: 20px;
+  color: rgb(0, 69, 126);
+  line-height: 2;
+}
+
+.container-info-weather span {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.container-info-weather h3 {
+  line-height: 1.5;
+
+}
+
+@media (max-width: 920px) {
+
+  .container {
+    width: 400px;
+  }
+  .aditionals {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 24px;
+  }
+
+  .container-info-weather {
+    margin: auto;
+    height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .side-left {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  @media (max-width: 480px) {
+    .container {
+      width: 380px;
+    }
+  }
+}
